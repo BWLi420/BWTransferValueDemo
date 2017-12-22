@@ -12,6 +12,7 @@
 #import "ViewC2.h"
 #import "ViewC3.h"
 #import "ViewC41.h"
+#import "Person.h"
 
 @interface ViewController ()<ViewC2Delegate>
 @end
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //2.一般在 viewDidLoad 中注册通知
+    //一般在 viewDidLoad 中注册通知
     //通知名称需一致
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeColor:) name:@"ChangeMainBgColor" object:@"VC42"];
 }
@@ -72,6 +73,9 @@
 
 #pragma mark - 单例
 - (IBAction)singleBtnClick:(UIButton *)sender {
+    
+    Person *person = [[Person alloc] init];
+    person.name = @"单例赋值的名字";
 }
 
 - (void)dealloc {

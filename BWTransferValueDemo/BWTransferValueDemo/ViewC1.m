@@ -8,6 +8,8 @@
 
 #import "ViewC1.h"
 
+#import "Person.h"
+
 @interface ViewC1 ()
 
 @end
@@ -24,6 +26,9 @@
     
     //正向传值结果
     NSLog(@"正向传值结果：%@", self.value_1);
+    
+    Person *person = [[Person alloc] init];
+    NSLog(@"取出单例赋值：%@", person.name);
 }
 
 
