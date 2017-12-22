@@ -12,7 +12,7 @@
 
 @interface Person : NSObject
 
-interfaceSingleton(PersonName);
+interfaceSingleton(Person);
 
 @property (nonatomic, copy) NSString *name;
 
