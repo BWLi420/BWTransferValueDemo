@@ -10,6 +10,7 @@
 
 #import "ViewC1.h"
 #import "ViewC2.h"
+#import "ViewC3.h"
 
 @interface ViewController ()<ViewC2Delegate>
 @end
@@ -44,6 +45,12 @@
 
 #pragma mark - block
 - (IBAction)blockBtnClick:(UIButton *)sender {
+    
+    ViewC3 *VC3 = [[ViewC3 alloc] init];
+    VC3.changeMainVCBgColor = ^(UIColor *color) {
+        self.view.backgroundColor = color;
+    };
+    [self.navigationController pushViewController:VC3 animated:YES];
 }
 
 #pragma mark - 通知
