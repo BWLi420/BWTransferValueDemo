@@ -16,10 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
+#pragma mark - 正向传值
+- (IBAction)forwardBtnClick:(UIButton *)sender {
+}
 
+#pragma mark - 代理
+- (IBAction)delegateBtnClick:(UIButton *)sender {
+}
 
+#pragma mark - block
+- (IBAction)blockBtnClick:(UIButton *)sender {
+}
+
+#pragma mark - 通知
+- (IBAction)notiBtnClick:(UIButton *)sender {
+}
+
+#pragma mark - 单例
+- (IBAction)singleBtnClick:(UIButton *)sender {
+}
 
 @end

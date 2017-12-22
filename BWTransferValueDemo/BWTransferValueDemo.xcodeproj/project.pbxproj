@@ -13,6 +13,7 @@
 		23882A161FECEEAE0090165A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23882A151FECEEAE0090165A /* Assets.xcassets */; };
 		23882A191FECEEAE0090165A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23882A171FECEEAE0090165A /* LaunchScreen.storyboard */; };
 		23882A1C1FECEEAE0090165A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23882A1B1FECEEAE0090165A /* main.m */; };
+		23882A231FECF12C0090165A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23882A221FECF12C0090165A /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		23882A181FECEEAE0090165A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23882A1A1FECEEAE0090165A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23882A1B1FECEEAE0090165A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23882A221FECF12C0090165A /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				23882A0D1FECEEAE0090165A /* AppDelegate.m */,
 				23882A0F1FECEEAE0090165A /* ViewController.h */,
 				23882A101FECEEAE0090165A /* ViewController.m */,
+				23882A221FECF12C0090165A /* ViewController.xib */,
 				23882A121FECEEAE0090165A /* Main.storyboard */,
 				23882A151FECEEAE0090165A /* Assets.xcassets */,
 				23882A171FECEEAE0090165A /* LaunchScreen.storyboard */,
@@ -131,6 +134,7 @@
 			files = (
 				23882A191FECEEAE0090165A /* LaunchScreen.storyboard in Resources */,
 				23882A161FECEEAE0090165A /* Assets.xcassets in Resources */,
+				23882A231FECF12C0090165A /* ViewController.xib in Resources */,
 				23882A141FECEEAE0090165A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
