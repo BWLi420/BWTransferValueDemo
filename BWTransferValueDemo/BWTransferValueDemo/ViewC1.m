@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //由于没有使用xib，view背景色默认透明，当push过来的时候会产生一种卡顿的视觉
+    //设置背景色即可解决
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     
     //正向传值结果
     NSLog(@"正向传值结果：%@", self.value_1);

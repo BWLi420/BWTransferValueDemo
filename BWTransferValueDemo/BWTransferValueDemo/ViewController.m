@@ -9,9 +9,9 @@
 #import "ViewController.h"
 
 #import "ViewC1.h"
+#import "ViewC2.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<ViewC2Delegate>
 @end
 
 @implementation ViewController
@@ -31,6 +31,15 @@
 
 #pragma mark - 代理
 - (IBAction)delegateBtnClick:(UIButton *)sender {
+    
+    ViewC2 *VC2 = [[ViewC2 alloc] init];
+    VC2.delegate = self;
+    [self.navigationController pushViewController:VC2 animated:YES];
+}
+
+- (void)changeMainVCBackgroundColor:(UIColor *)color {
+    
+    self.view.backgroundColor = color;
 }
 
 #pragma mark - block
@@ -44,5 +53,7 @@
 #pragma mark - 单例
 - (IBAction)singleBtnClick:(UIButton *)sender {
 }
+
+
 
 @end
