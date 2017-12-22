@@ -11,6 +11,7 @@
 #import "ViewC1.h"
 #import "ViewC2.h"
 #import "ViewC3.h"
+#import "ViewC41.h"
 
 @interface ViewController ()<ViewC2Delegate>
 @end
@@ -20,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //2.一般在 viewDidLoad 中注册通知
+    //通知名称需一致
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeColor:) name:@"ChangeMainBgColor" object:@"VC42"];
+}
+
+- (void)changeColor:(NSNotification *)noti {
+    
+    NSDictionary *dict = noti.userInfo;
+    self.view.backgroundColor = [dict valueForKeyPath:@"color"];
 }
 
 #pragma mark - 正向传值
@@ -55,12 +65,18 @@
 
 #pragma mark - 通知
 - (IBAction)notiBtnClick:(UIButton *)sender {
+    
+    ViewC41 *VC41 = [[ViewC41 alloc] init];
+    [self.navigationController pushViewController:VC41 animated:YES];
 }
 
 #pragma mark - 单例
 - (IBAction)singleBtnClick:(UIButton *)sender {
 }
 
-
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"ChangeMainBgColor" object:@"VC42"];
+}
 
 @end
