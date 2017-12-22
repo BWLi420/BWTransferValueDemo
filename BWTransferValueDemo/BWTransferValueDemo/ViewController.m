@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "ViewC1.h"
+
 @interface ViewController ()
 
 @end
@@ -21,6 +23,10 @@
 
 #pragma mark - 正向传值
 - (IBAction)forwardBtnClick:(UIButton *)sender {
+    
+    ViewC1 *VC1 = [[ViewC1 alloc] init];
+    VC1.value_1 = @"我是正向传值";
+    [self.navigationController pushViewController:VC1 animated:YES];
 }
 
 #pragma mark - 代理
